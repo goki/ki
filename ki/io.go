@@ -65,9 +65,8 @@ func (n *Node) WriteJSON(writer io.Writer, indent bool) error {
 	_, err = writer.Write(nwb)
 	if err != nil {
 		log.Println(err)
-		return err
 	}
-	return nil
+	return err
 }
 
 // SaveJSON saves the tree to a JSON-encoded file, using WriteJSON.
@@ -78,7 +77,7 @@ func (n *Node) SaveJSON(filename string) error {
 		log.Println(err)
 		return err
 	}
-	err = n.WriteJSON(bufio.NewWriter(fp), Indent) // use indent by default
+	err = n.WriteJSON(fp, Indent) // use indent by default
 	if err != nil {
 		log.Println(err)
 	}
