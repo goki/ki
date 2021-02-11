@@ -77,7 +77,13 @@ func (n *Node) SaveJSON(filename string) error {
 		log.Println(err)
 		return err
 	}
-	err = n.WriteJSON(fp, Indent) // use indent by default
+	bw := bufio.NewWriter(fp)
+	err = n.WriteJSON(bw, Indent) // use indent by default
+	if err != nil {
+		log.Println(err)
+		return err
+	}
+	err = bw.Flush()
 	if err != nil {
 		log.Println(err)
 	}
