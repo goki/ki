@@ -7,6 +7,9 @@ Go language (golang) tree structure (ki = 木 = tree in Japanese)
 [![CI](https://github.com/goki/ki/actions/workflows/ci.yml/badge.svg)](https://github.com/goki/ki/actions/workflows/ci.yml)
 [![Codecov](https://codecov.io/gh/goki/ki/branch/master/graph/badge.svg?token=Hw5cInAxY3)](https://codecov.io/gh/goki/ki)
 
+
+**NOTE:** Development of Ki is currently happening on the [master branch](https://github.com/goki/ki). This branch (the v1 branch) is an archive of the last stable version of Ki, and it will only receive updates for urgent bug fixes.
+
 # Overview
 
 See the [Wiki](https://github.com/goki/ki/wiki) for more docs, and [Google Groups goki-gi](https://groups.google.com/forum/#!forum/goki-gi) emailing list.
