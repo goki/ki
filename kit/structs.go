@@ -29,7 +29,11 @@ func SetFromDefaultTags(obj any) error {
 		fv := val.Field(i)
 		def, ok := f.Tag.Lookup("def")
 		if NonPtrType(f.Type).Kind() == reflect.Struct && (!ok || def == "") {
-			SetFromDefaultTags(PtrValue(fv).Interface())
+			fi := PtrValue(fv).Interface()
+			if IfaceIsNil(fi) {
+				continue
+			}
+			SetFromDefaultTags(fi)
 			continue
 		}
 		if !ok || def == "" {
