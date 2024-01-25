@@ -7,7 +7,7 @@ Go language (golang) tree structure (ki = 木 = tree in Japanese)
 [![CI](https://goki.dev/ki/v2/actions/workflows/ci.yml/badge.svg)](https://goki.dev/ki/v2/actions/workflows/ci.yml)
 [![Codecov](https://codecov.io/gh/goki/ki/branch/master/graph/badge.svg?token=Hw5cInAxY3)](https://codecov.io/gh/goki/ki)
 
-> **IMPORTANT:** Development of Goki has moved to [Cogent Core](https://github.com/cogentcore). For the latest stable version of ki v1, import version 1.1.17 and see the [v1 branch](https://github.com/goki/ki/tree/v1).
+> **IMPORTANT:** Development of Goki has moved to [Cogent Core](https://github.com/cogentcore). This repository has the v1 version of ki.
 
 # Overview
 
